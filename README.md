@@ -489,7 +489,7 @@
         </audio>
         
         <audio id="birthdayAudio">
-            <source src="09.MP3" type="audio/mpeg">
+            <source src="09.mp3" type="audio/mpeg">
             您的浏览器不支持音频元素。
         </audio>
         
@@ -577,7 +577,7 @@
                 playerControls.style.display = 'flex';
                 
                 // 显示播放提示
-                hintText.innerHTML = '🎵 背景音乐已播放（循环中），点击播放生日歌！';
+                hintText.innerHTML = '🎵 背景音乐已播放，点击播放录音！';
             }, 1000);
         }
         
