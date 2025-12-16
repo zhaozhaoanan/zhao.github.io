@@ -610,10 +610,10 @@
             birthdayAudio.play().then(() => {
                 isBirthdayMusicPlaying = true;
                 startLyrics();
-                document.getElementById('hintText').innerHTML = '🎵 生日歌播放中...';
+                document.getElementById('hintText').innerHTML = '🎵 录音播放中...';
             }).catch(error => {
                 console.error('生日歌播放失败:', error);
-                document.getElementById('hintText').innerHTML = '❌ 生日歌播放失败，请点击页面后重试';
+                document.getElementById('hintText').innerHTML = '❌ 录音播放失败，请点击页面后重试';
             });
         }
         
@@ -628,10 +628,10 @@
                 clearTimeout(lyricsTimer);
             }
             
-            document.getElementById('hintText').innerHTML = '⏸ 生日歌已暂停';
+            document.getElementById('hintText').innerHTML = '⏸ 录音已暂停';
         }
         
-        // 重播生日歌
+        // 重播
         function restartBirthdayMusic() {
             if (!birthdayAudio) return;
             
